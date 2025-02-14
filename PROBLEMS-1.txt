@@ -1,0 +1,150 @@
+MAP
+
+import java.util.*;
+public class Main
+{
+public static void main(String[] args) {
+//List <Integer> score = new ArrayList <> ();
+Map <String, Integer> teamScore = new HashMap <> ();
+teamScore.put("Team sun", 10);
+teamScore.put("Team moon", 8);
+teamScore.put("Team water", 5);
+teamScore.put("Team earth", 6);
+teamScore.put("Team rock", 7);
+System.out.println(teamScore);
+}
+}
+
+SET
+
+import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
+public class Main {
+public static void main(String[] args) {
+Set <Integer> set = new TreeSet <> ();
+set.add(4);
+set.add(1);
+set.add(1);
+set.add(2);
+set.add(3);
+set.add(2);
+set.add(3);
+System.out.println(set);
+}
+}
+
+2D ARRAY
+
+import java.util.*;
+public class Main {
+public static void main(String[] args) {
+//int[][] numbers = new int[1][2];
+int[][] numbers = {{1,2,3},{4,5,6}};
+int sum = 0;
+int length = numbers.length;
+int result = 0;
+int avg;
+for(int i = 0; i < numbers.length; i++){
+for(int j = 0; j < numbers[i].length; j++){
+sum = 2 * numbers[i][j];
+System.out.println("Sum of 2 * each element is "+ sum);
+}
+}
+}
+}
+
+import java.util.*;
+public class SumOfArray {
+public static void main(String[] args) {
+//int[][] numbers = new int[1][2];
+int[][] numbers = {{1,2,3},{4,5,6}};
+int sum = 0;
+for(int i = 0; i < numbers.length; i++){
+for(int j = 0; j < numbers[i].length; j++){
+sum += numbers[i][j];
+System.out.println("Total sum of each element in the array: "+
+sum);
+}
+}
+}
+}
+
+ARRAY
+
+public class Main{
+public static void main(String[] args){
+int[] numbers = {1,2,3,4};
+int sum = 0;
+int multiplication = 1;
+for(int i = 0; i < numbers.length; i++){
+sum = sum + numbers[i];
+multiplication = multiplication * numbers[i];
+}
+System.out.println(sum);
+System.out.println(multiplication);
+}
+}
+
+public class Main {
+public static void main(String[] args) {
+int n = 5;
+int[] a = {1, 2, 3, 4, 5};
+int result = isSorted(n, a);
+System.out.println(result);
+}
+public static int isSorted(int n, int[] a) {
+for (int i = 0; i < n - 1; i++) {
+if (a[i] > a[i + 1]) {
+return 0;
+}
+}
+return 1;
+}
+}
+
+ARRAY INDEX
+
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter the integer :");
+int index = sc.nextInt();
+int[] numbers = {1,2,3,4,5,6};
+for(int i = 0; i < numbers.length; i++){
+if(index == numbers[i]){
+numbers[i] = i;
+}
+}
+System.out.println(index - 1);
+/*
+for(int arrayIndex : numbers){
+System.out.println(arrayIndex);
+}
+*/
+}
+}
+
+//import java.util.Arrays;
+public class Main {
+public static void main(String[] args) {
+int[] numbers = new int[100];
+for (int index = 0; index < 100; index++) {
+numbers[index] = 200 - index;
+if(!(numbers[index]%2 == 0)){
+System.out.println(numbers[index]);
+}
+}
+//System.out.println(Arrays.toString(numbers));
+//for (int num : numbers) {
+//
+System.out.println(num);
+//}
+}
+}
+
+
